@@ -1,0 +1,74 @@
+.picker {
+    position: absolute;
+    z-index: 1000;
+    margin-left: 200px;
+    margin-top: -40px;
+    display: none;
+}
+label {
+    cursor: pointer;
+    padding-right: 6px;
+}
+/* TODO: fix dumb ats.css default */
+label.checkbox {
+    width: auto;
+    font-weight: normal;
+    display: inline;
+    padding-left: 2px;
+}
+table.layout {
+    padding: 0px;
+    margin: 0px;
+    border-spacing: 0px;
+    width: 100%;
+}
+table.layout #options-pane { width: 400px }
+table.layout table {
+    padding: 0px;
+    margin: 0px;
+}
+table.options td { padding: 6px }
+table.options td:first-child {
+    text-align: right;
+    width: 90px;
+}
+.code-button-container {
+    padding-top: 10px;
+    padding-bottom: 6px;
+    padding-left: 0px;
+    text-align: right;
+}
+.expand-button { display: none }
+.collapse-button { }
+.section-body { position: relative }
+.section-collapsed { display: none }
+.clickable { cursor: pointer }
+.semi-transparent {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0.6)";
+    filter: alpha(opacity=0.6);
+    -webkit-opacity: 0.6;
+    opacity: 0.6;
+}
+.message {
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 40px;
+    height: auto;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1.0)";
+    filter: alpha(opacity=1.0);
+    -webkit-opacity: 1.0;
+    opacity: 1.0;
+    transition: opacity .25s ease-in;
+    -webkit-transition: opacity .25s ease-in;
+    z-index: 3000;
+}
+.opacity-hidden {
+    height: 0 !important;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)" !important;
+    filter: alpha(opacity=0) !important;
+    -webkit-opacity: 0 !important;
+    opacity: 0 !important;
+}
+textarea { border: none }
+.wrap img { vertical-align: middle }
